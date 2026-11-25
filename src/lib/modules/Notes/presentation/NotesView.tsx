@@ -14,7 +14,7 @@ export function NotesView({
   userId: string | null;
   email: string | undefined;
 }) {
-  // Estados: notes (arreglo de notas) y noteSelected (nota activa en el modal)
+  
   const [notes, setNotes] = useState<Note[]>([]);
   const [noteSelected, setNoteSelected] = useState<Note | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -96,9 +96,9 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   title: {
-    fontSize: 26,
-    fontWeight: "800",
-    color: "#111827",
+    fontSize: 35,
+    fontWeight: "900",
+    color: "#8b2fc9",
   },
   subtitle: {
     fontSize: 12,
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   loader: {
-    marginTop: 40,
+    marginTop: 150,
   },
   listContent: {
     paddingBottom: 24,
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
   emptyText: {
     textAlign: "center",
     color: "#6B7280",
-    marginTop: 40,
+    marginTop: 250,
     fontSize: 15,
   },
 });

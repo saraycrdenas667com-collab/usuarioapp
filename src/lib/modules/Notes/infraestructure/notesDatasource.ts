@@ -1,9 +1,8 @@
-// DataSource (funciones) para Notas con Supabase
-import { Note } from "../domain/note.entity";
-// Ajusta esta ruta si tu cliente de supabase está en otra carpeta
-import { supabase } from "../../../supabase";
 
-// Leer todas las notas ordenadas de la más reciente a la más antigua
+import { supabase } from "../../../supabase";
+import { Note } from "../domain/note.entity";
+
+// Lee todas las notas ordenadas de la más reciente a la más antigua
 export async function getAllNotes(): Promise<Note[]> {
   const { data, error } = await supabase
     .from("Notas")

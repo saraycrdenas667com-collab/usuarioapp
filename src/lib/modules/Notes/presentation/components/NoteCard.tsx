@@ -1,4 +1,4 @@
-// Componente para mostrar una nota en la vista de notas
+
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Note } from "../../domain/note.entity";
 
@@ -8,7 +8,7 @@ interface Props {
 }
 
 export function NoteCard({ note, onPress }: Props) {
-  // Formatear fecha legible si existe
+  
   const formattedDate = note.created_at
     ? new Date(note.created_at).toLocaleDateString()
     : "";
