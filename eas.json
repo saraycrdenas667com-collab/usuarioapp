@@ -9,8 +9,10 @@
       "distribution": "internal"
     },
     "preview": {
+      "environment": "preview",
       "android": {
         "buildType": "apk"
+      }
     },
     "production": {
       "autoIncrement": true
@@ -19,7 +21,4 @@
   "submit": {
     "production": {}
   }
-   
-      }
-    }
-
+}
